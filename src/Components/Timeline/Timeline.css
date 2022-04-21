@@ -1,0 +1,45 @@
+.Timeline{
+    padding: 0 !important;
+}
+
+.Timeline .timeline_header{
+    padding-top: 7px;
+}
+.Timeline .timeline_firsttitle{
+    min-height: 80px !important;
+}
+
+.Timeline .MuiTimelineItem-root{
+    min-height: 0px
+}
+
+.Timeline .MuiTimelineItem-missingOppositeContent:before{
+    display: none;
+}
+
+.Timeline .timeline_dot_header{
+    background-color: #ffc500;
+    color: black;
+    font-size: small;
+    padding: 10px;
+}
+
+.Timeline .MuiTimelineConnector-root{
+    background-color: #eee !important;
+}
+
+.timeline_dot{
+    border-color: #ffc500;
+    color: black;
+    font-size: small;
+    padding: 2px;
+}
+
+.Timeline .timeline_dot_header > .MuiSvgIcon-root{
+    font-size: 20px;
+    color: darkslategray;
+}
+
+.separator_padding{
+    padding-left: 16px !important;
+}
