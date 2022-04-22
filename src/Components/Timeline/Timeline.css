@@ -28,11 +28,11 @@
     background-color: #eee !important;
 }
 
-.timeline_dot{
-    border-color: #ffc500;
-    color: black;
-    font-size: small;
-    padding: 2px;
+.Timeline .timeline_dot{
+    border-color: #ffc500  !important;
+    color: black  !important;
+    font-size: small  !important;
+    padding: 2px  !important;
 }
 
 .Timeline .timeline_dot_header > .MuiSvgIcon-root{
@@ -40,6 +40,36 @@
     color: darkslategray;
 }
 
-.separator_padding{
+.Timeline .separator_padding{
     padding-left: 16px !important;
+}
+.profile_information{
+    top:0;
+    left:0;
+    margin:-40px 2px 30px
+
+}
+
+.profile_information .Timeline .timeline_content{
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.timelineItem_text{
+    font-size: 13.5px !important;
+    color: #787878 !important;
+    font-weight: 400 !important;
+    text-decoration: none;
+}
+
+.timelineItem_text > a{
+    text-decoration: none;
+    font-weight: 400 !important;
+    color: #787878 !important;
+}
+
+.timelineItem_text > span{
+    
+    color:black;
+   
 }
