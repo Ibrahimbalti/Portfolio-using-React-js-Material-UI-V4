@@ -16,11 +16,13 @@ function App() {
           <Profile />
         </Grid>
 
-        <Grid item xs={12} sm={6} md={8} lg={9} style={{ backgroundColor: "green" }}>
-          <Header />
+        <Grid item xs={12} sm={6} md={8} lg={9}>
+        <Header />
           <Routes>
+          {/* <Route exact path="/" element={<Header />} /> */}
+          <Route exact path="/" element={<Resume />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
-            <Route exact path="/" element={<Resume />} />
+            
           </Routes>
           <Footer />
         </Grid>
