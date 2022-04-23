@@ -7,6 +7,8 @@ import profileiamge from '../../assets/Images/profile.jpg'
 import CustomizeTimeline,{CustomizeTimelineSeparator} from '../Timeline/CustomizeTimeline'
 import resumeData from '../../utills/resumeData'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
+import CustomButton from '../Button/CustomButton';
+import GetAppIcon from '@material-ui/icons/GetApp';
 
 const CustomizeTimelineItem=({title,text,link})=>{
    return(
@@ -46,7 +48,10 @@ export default function Profile() {
             </CustomizeTimeline>
 
             <br/>
-            <Button>button</Button>
+            <div className='button_container'>
+            <CustomButton text="Download Cv" icon={<GetAppIcon/>}/>
+            </div>
+           
         </div>
     </div>
   )
