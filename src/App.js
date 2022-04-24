@@ -18,12 +18,15 @@ function App() {
 
         <Grid item xs={12} sm={6} md={8} lg={9}>
         <Header />
+        <div className="main-content container_showdow">
           <Routes>
+            
           {/* <Route exact path="/" element={<Header />} /> */}
           <Route exact path="/" element={<Resume />} />
             <Route exact path="/portfolio" element={<Portfolio />} />
             
           </Routes>
+          </div>
           <Footer />
         </Grid>
       </Grid>

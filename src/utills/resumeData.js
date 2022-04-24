@@ -31,5 +31,6 @@ export default {
             text:"MyGithub",
             icon:< GitHubIcon/>
         },
-    }
+    },
+    about:"Knowledgeable Web Developer brings superior front- and back-end design to promote organization-specific website presence. Thorough comprehension of complex HTML, CSS JavaScript MERN Stack programming languages to generate custom webpage design. Extensive collaboration with MERN Stack to ascertain company expectations and oversee site creation, from initial planning through rollout and support. \n\nDetail-oriented approach to maintaining website responsiveness, effectiveness and security. Logical and results.driven Web Developer dedicated to building and optimizing user-focused websites for customers with various business objectives."
 }
