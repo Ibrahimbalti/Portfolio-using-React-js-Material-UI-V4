@@ -3,6 +3,8 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import WebOutlinedIcon from '@material-ui/icons/WebOutlined';
+import AssignmentIndOutlinedIcon from '@material-ui/icons/AssignmentIndOutlined';
 export default {
     name:"Muhammad Ibrahim",
     title:"Full Stack developer",
@@ -66,6 +68,58 @@ export default {
             title:"education 1",
             date:"3333",
             description:"Good buy"
+        },
+    ],
+
+    services:[
+        {
+            title:"Web Development",
+            description:"Good buy",
+            icon:<WebOutlinedIcon/>
+        },
+        {
+            title:"FrontEnd",
+            description:"Good buy",
+            icon:<AssignmentIndOutlinedIcon/>
+        },
+        {
+            title:"Full Stack",
+            description:"Good buy",
+            icon:<WebOutlinedIcon/>
+        },
+    ],
+    skill:[
+        {
+            title:"FRONT-END",
+            describe:[
+                "ReactJS",
+                "JavaScript",
+                "Material Ui",
+                "CSS",
+                "HTML",
+                "Bootstrap"
+            ]
+        },
+        {
+            title:"BACK-END",
+            describe:[
+                "NodeJS",
+                "ExpressJS",
+            ]
+        },
+        {
+            title:"DATABASE",
+            describe:[
+                "MongoDB",
+            ]
+        },
+        {
+            title:"SOURCE-CONTROL",
+            describe:[
+                "Git",
+                "GitHub",
+                "Jira",
+            ]
         },
     ]
 }
