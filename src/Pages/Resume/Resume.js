@@ -1,10 +1,10 @@
 import React from 'react'
-import { Grid, Icon, Typography } from '@material-ui/core'
+import { Grid, Icon, Paper, Typography } from '@material-ui/core'
 import './resume.css'
 import resumeData from '../../utills/resumeData'
 import {CustomizeTimeline,CustomizeTimelineSeparator} from '../../Components/Timeline/CustomizeTimeline'
 import WorkIcon from '@material-ui/icons/Work';
-import { TimelineContent, TimelineItem } from '@material-ui/lab'
+import { TimelineContent, TimelineDot, TimelineItem } from '@material-ui/lab'
 import SchoolIcon from '@material-ui/icons/School';
 
 const Resume=()=>{
@@ -87,8 +87,25 @@ const Resume=()=>{
       </Grid>
 
       {/* Skill */}
-      <Grid container>
-
+      <Grid container className='section graybg pb_45 p_50' >
+        <Grid item xs={12}>
+          <Grid container spacing={3} justify="space-between" >
+          {resumeData.skill.map((skill)=>(
+        <Grid item xs={12} sm={6} md={3} >
+          <Paper elevation={0} className='skill'>
+            <Typography variant='h6' className='skill_title'>{skill.title}</Typography>
+            {skill.describe.map((des)=>(
+              <Typography variant='body2' className='skill_description'>
+                <TimelineDot className='timeline_dot'/>
+                {des}
+              </Typography>
+            ))}
+          </Paper>
+        </Grid>
+      ))}
+          </Grid>
+        </Grid>
+     
       </Grid>
 
       {/* Contact */}
