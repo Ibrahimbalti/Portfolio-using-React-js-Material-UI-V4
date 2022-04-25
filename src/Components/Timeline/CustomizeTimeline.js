@@ -8,7 +8,7 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import { Typography } from '@mui/material';
 import './Timeline.css'
 
-const CustomizeTimeline=({ title, icon, children })=> {
+export const CustomizeTimeline=({ title, icon, children })=> {
   return (
     <Timeline className='Timeline'>
       <TimelineItem className='timeline_firsttitle'>
@@ -32,4 +32,3 @@ export const CustomizeTimelineSeparator = () => {
   )
 }
 
-export default  CustomizeTimeline

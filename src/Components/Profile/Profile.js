@@ -4,7 +4,7 @@ import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import "./Profile.css"
 import profileiamge from '../../assets/Images/profile.jpg'
-import CustomizeTimeline,{CustomizeTimelineSeparator} from '../Timeline/CustomizeTimeline'
+import {CustomizeTimeline,CustomizeTimelineSeparator} from '../Timeline/CustomizeTimeline'
 import resumeData from '../../utills/resumeData'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import CustomButton from '../Button/CustomButton';
