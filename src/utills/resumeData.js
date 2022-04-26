@@ -121,5 +121,67 @@ export default {
                 "Jira",
             ]
         },
+    ],
+    projects:[
+        {
+            tag:"React js",
+            image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            title:"Project 1",
+            description:" This is my first project Now",
+            links:[
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                },
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+                ,{
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+            ]
+        },
+        {
+            tag:"Javascript",
+            image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            title:"Project 1",
+            description:" This is my first project Now",
+            links:[
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                },
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+                ,{
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+            ]
+        },
+        {
+            tag:"Python",
+            image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            title:"Project 1",
+            description:" This is my first project Now",
+            links:[
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                },
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+                ,{
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+            ]
+        },
     ]
 }
