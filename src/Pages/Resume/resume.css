@@ -83,3 +83,28 @@
    padding: 2px !important;
    margin-right: 5px !important;
 }
+
+/* end skill */
+
+/* start contact */
+.contactinfo_item{
+   font-size: 14px !important;
+   color: #787878;
+   line-height: 34px !important;
+}
+
+.contactinfo_item > span{
+   color: black;
+   font-weight: 500;
+}
+
+.contactinfo_social > a > .MuiSvgIcon-root{
+  font-size: 16px !important ;
+  margin-right: 10px ;
+  color:black;
+}
+
+.contactinfo_socialContainer{
+   margin-top: 15px;
+}
+/* end contact */
