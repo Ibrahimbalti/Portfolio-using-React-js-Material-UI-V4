@@ -127,6 +127,7 @@ export default {
             tag:"React js",
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
             title:"Project 1",
+            caption:"Short Description",
             description:" This is my first project Now",
             links:[
                 {
@@ -146,7 +147,8 @@ export default {
         {
             tag:"Javascript",
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
-            title:"Project 1",
+            title:"Project 3",
+            caption:"Short Description",
             description:" This is my first project Now",
             links:[
                 {
@@ -166,7 +168,29 @@ export default {
         {
             tag:"Python",
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
-            title:"Project 1",
+            title:"Project 2",
+            caption:"Short Description",
+            description:" This is my first project Now",
+            links:[
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                },
+                {
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+                ,{
+                    link:"https://www.linkedin.com/in/muhammad-ibrahim-6a8ab119a/",
+                    icon:< GitHubIcon/>
+                }
+            ]
+        },
+        {
+            tag:"Java",
+            image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            title:"Project 7",
+            caption:"Short Description",
             description:" This is my first project Now",
             links:[
                 {
