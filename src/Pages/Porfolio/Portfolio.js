@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import './portfolio.css'
-import { CardActionArea, CardActions, CardContent, CardMedia, Dialog, Grid,Grow,Tab, Tabs, Typography } from '@material-ui/core'
+import { CardActionArea,  CardContent, CardMedia, Dialog, Grid,Grow,Tab, Tabs, Typography,Card } from '@material-ui/core'
 import resumeData from '../../utills/resumeData'
-import { Card } from 'react-bootstrap'
 import { DialogActions, DialogContent, DialogTitle } from '@mui/material'
+import ImageGallery from '../../Components/imageGallery/ImageGallery'
 const Portfolio = () => {
   const [tabvalue,setTabvalue]=useState("All")
   const [projectsDialog,setProejctDialog]=useState(false)
@@ -19,20 +19,20 @@ const Portfolio = () => {
 
         {/* Tab */}
         <Grid item xs={12}>
-          <Tabs value={tabvalue} indicatorColor="white" className='customTab' onChange={(even,newValue)=>setTabvalue(newValue)}>
+          <Tabs value={tabvalue} indicatorColor="primary" className='customTab' onChange={(even,newValue)=>setTabvalue(newValue)}>
             <Tab label="All" value="All" className={tabvalue === 'All' ? ('customTabs_item active'):('customTabs_item')}/>
-            {[...new Set(resumeData.projects.map((item)=>item.tag))].map((tag)=>(
-              <Tab label={tag} value={tag} className={tabvalue === tag ? ('customTabs_item  active'):('customTabs_item')} />
+            {[...new Set(resumeData.projects.map((item)=>item.tag))].map((tag,i)=>(
+              <Tab key={i} label={tag} value={tag} className={tabvalue === tag ? ('customTabs_item  active'):('customTabs_item')} />
             ))}
           </Tabs>
         </Grid>
         {/* Projects */}
-        <Grid xs={12}>
+        <Grid item xs={12}>
           <Grid container spacing={3} >
-{resumeData.projects.map((project)=>(
+{resumeData.projects.map((project,i)=>(
   <>
   {tabvalue == project.tag || tabvalue == "All" ? (
-    <Grid item xs={12} sm={6} md={4}  >
+    <Grid item xs={12} sm={6} md={4} key={i}  >
     <Grow in timeout={1000}>
     <Card className='customCard' onClick={()=>setProejctDialog(project)}>
       <CardActionArea>
@@ -53,15 +53,21 @@ const Portfolio = () => {
           </Grid>
         </Grid>
         {/* Dialog box */}
-        <Dialog open={projectsDialog} onClose={()=>setProejctDialog(false)} className='projectDialog'>
+        <Dialog open={projectsDialog} onClose={()=>setProejctDialog(false)} className='projectDialog' maxWidth="lg" fullWidth >
         <DialogTitle onClose={()=>setProejctDialog(false)}>{projectsDialog.title}</DialogTitle>
-        <img src={projectsDialog.image} alt='' className='projectDialog_image' />
-        <DialogContent projectDialog_description className='projectDialog_description'>
-         {projectsDialog.description}
+        <DialogContent projectDialog_description style={{height:'80vh'}}>
+          {projectsDialog.images && (
+              <ImageGallery images={projectsDialog.images}/>
+          )}
+
+          <Typography className='projectDialog_description' >
+          {projectsDialog.description}
+          </Typography>
+         
         </DialogContent>
         <DialogActions className='projectDialog_icon'>
-         {projectsDialog?.links?.map((link)=>(
-           <a href={link.link} target='_blank' className='projectDialog_icon'>{link.icon}</a>
+         {projectsDialog?.links?.map((link,i)=>(
+           <a href={link.link} target='_blank' className='projectDialog_icon' key={i}>{link.icon}</a>
          ))}
         </DialogActions>
     </Dialog>

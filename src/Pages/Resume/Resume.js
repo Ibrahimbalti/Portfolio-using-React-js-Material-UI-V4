@@ -34,8 +34,8 @@ const Resume = () => {
             {/* Experience*/}
             <Grid item sm={12} md={6}>
               <CustomizeTimeline title='Work Experience' icon={<WorkIcon />} >
-                {resumeData.experience.map((exprience) => (
-                  <TimelineItem >
+                {resumeData.experience.map((exprience,i) => (
+                  <TimelineItem key={i} >
                     <CustomizeTimelineSeparator />
                     <TimelineContent className='timeline_content'>
                       <Typography className='timeline_title'>{exprience.title}</Typography>
@@ -49,8 +49,8 @@ const Resume = () => {
             {/* Education */}
             <Grid item sm={12} md={6}>
               <CustomizeTimeline title='Education Detail' icon={<SchoolIcon />} >
-                {resumeData.education.map((education) => (
-                  <TimelineItem >
+                {resumeData.education.map((education,i) => (
+                  <TimelineItem key={i} >
                     <CustomizeTimelineSeparator />
                     <TimelineContent className='timeline_content'>
                       <Typography className='timeline_title'>{education.title}</Typography>
@@ -73,9 +73,9 @@ const Resume = () => {
         </Grid>
 
         <Grid item xs={12} >
-          <Grid container spacing={3} justify='space-around'>
-            {resumeData.services.map((services) => (
-              <Grid item xs={12} sm={6} md={3}>
+          <Grid container spacing={3} justifyContent='space-around'>
+            {resumeData.services.map((services,i) => (
+              <Grid item xs={12} sm={6} md={3} key={i}>
                 <div className='services'>
                   <Icon className='services_icon'>{services.icon}</Icon>
                   <Typography className='services_title' variant='h6'>{services.title}</Typography>
@@ -91,12 +91,12 @@ const Resume = () => {
       <Grid container className='section graybg pb_45 p_50' >
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-between" >
-            {resumeData.skill.map((skill) => (
-              <Grid item xs={12} sm={6} md={3} >
+            {resumeData.skill.map((skill,i) => (
+              <Grid item xs={12} sm={6} md={3} key={i} >
                 <Paper elevation={0} className='skill'>
                   <Typography variant='h6' className='skill_title'>{skill.title}</Typography>
-                  {skill.describe.map((des) => (
-                    <Typography variant='body2' className='skill_description'>
+                  {skill.describe.map((des,i) => (
+                    <Typography variant='body2' className='skill_description' key={i}>
                       <TimelineDot className='timeline_dot' />
                       {des}
                     </Typography>
@@ -156,8 +156,8 @@ const Resume = () => {
             </Grid>
             <Grid item xs={12}>
               <Grid container className="contactinfo_socialContainer">
-                {Object.keys(resumeData.social).map((key)=>(
-                  <Grid item className='contactinfo_social'>
+                {Object.keys(resumeData.social).map((key,i)=>(
+                  <Grid item className='contactinfo_social' key={i}>
                     <a href={resumeData.social[key].link}>
                       {resumeData.social[key].icon}
                     </a>

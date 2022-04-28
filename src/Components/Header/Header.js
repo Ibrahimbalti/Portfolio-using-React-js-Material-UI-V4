@@ -1,17 +1,17 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Nav,Navbar,NavDropdown} from "react-bootstrap"
-import {HomeRounded,SchoolRounded,WorkRounded,Facebook,Twitter,LinkedIn,GitHub,Telegram} from '@material-ui/icons';
-import {Link,NavLink} from "react-router-dom"
+import {Nav,Navbar} from "react-bootstrap"
+import {HomeRounded,Telegram} from '@material-ui/icons';
+import {NavLink} from "react-router-dom"
 import resumeData from '../../utills/resumeData';
 import CustomButton from '../Button/CustomButton';
 import { useLocation } from 'react-router-dom';
 import './Header.css'
-const Header=(props)=> {
+const Header=()=> {
   const location = useLocation();
   // console.log(location.pathname);
   const pathName=location.pathname
-  console.log(pathName)
+
  
   return (
     <Navbar expand='lg' sticky='stop' className='header'>

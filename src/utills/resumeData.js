@@ -125,6 +125,8 @@ export default {
     projects:[
         {
             tag:"React js",
+            images:["https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+                 "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"],
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
             title:"Project 1",
             caption:"Short Description",
@@ -146,6 +148,8 @@ export default {
         },
         {
             tag:"Javascript",
+            images:["https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"],
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
             title:"Project 3",
             caption:"Short Description",
@@ -167,6 +171,8 @@ export default {
         },
         {
             tag:"Python",
+            images:["https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"],
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
             title:"Project 2",
             caption:"Short Description",
@@ -188,6 +194,8 @@ export default {
         },
         {
             tag:"Java",
+            images:["https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
+            "https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg"],
             image:"https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg?w=2000",
             title:"Project 7",
             caption:"Short Description",
