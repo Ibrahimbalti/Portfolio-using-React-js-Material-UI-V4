@@ -8,12 +8,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #fafafa;
-  overflow: hidden;
-  background:url("./assets/Images/background.jpg");
-  background-position: cover;
+  /* background-color: #fafafa; */
+  background-color:lightgray;
+  /* overflow: hidden; */
+  background:url("./assets/Images/bg2.jpg"); 
+  
+ background-position: cover;
   background-repeat: no-repeat;
-  background-size: cover; */
+  background-size: cover;
 }
 
 code {
@@ -21,11 +23,11 @@ code {
     monospace;
 }
 
-.container_showdow{
+/* .container_showdow{
   box-shadow: 0 2px 92px 0px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0 2px 92px 0px rgba(0, 0, 0, 0.13);
   -webkit-box-shadow: 0 2px 92px 0px rgba(0, 0, 0, 0.13);
-}
+} */
 
 .main-content{
   background-color: white;

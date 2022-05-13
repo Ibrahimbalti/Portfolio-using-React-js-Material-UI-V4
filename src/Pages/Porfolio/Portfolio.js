@@ -59,9 +59,9 @@ const Portfolio = () => {
           {projectsDialog.images && (
               <ImageGallery images={projectsDialog.images}/>
           )}
-
-          <Typography className='projectDialog_description' >
-          {projectsDialog.description}
+      <br/>
+          <Typography  className='projectDialog_description' >
+         <pre >{projectsDialog.description}</pre> 
           </Typography>
          
         </DialogContent>

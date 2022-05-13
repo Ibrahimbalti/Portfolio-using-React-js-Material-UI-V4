@@ -36,3 +36,9 @@
     margin-right: 5px !important;
     color: #000 !important;
 }
+
+.custom_anchor{
+    font-size: 14px !important;
+    text-decoration: none;
+    color: #000 !important;
+}

@@ -1,7 +1,8 @@
 import React from 'react'
-import {Button,Typography} from '@mui/material'
+import {Typography} from '@mui/material'
 import TimelineItem from '@material-ui/lab/TimelineItem';
 import TimelineContent from '@material-ui/lab/TimelineContent';
+import { Button } from '@mui/material'
 import "./Profile.css"
 import profileiamge from '../../assets/Images/profile.jpg'
 import {CustomizeTimeline,CustomizeTimelineSeparator} from '../Timeline/CustomizeTimeline'
@@ -9,6 +10,10 @@ import resumeData from '../../utills/resumeData'
 import PersonOutlineIcon from '@material-ui/icons/PersonOutline';
 import CustomButton from '../Button/CustomButton';
 import GetAppIcon from '@material-ui/icons/GetApp';
+import '../Button/Button.css'
+
+import DownloadIcon from '@mui/icons-material/Download';
+
 
 const CustomizeTimelineItem=({title,text,link})=>{
    return(
@@ -25,6 +30,7 @@ const CustomizeTimelineItem=({title,text,link})=>{
    )
 }
 export default function Profile() {
+ 
   return (
     <div className='profile container_showdow'>
         <div className='profile_name'>
@@ -49,7 +55,16 @@ export default function Profile() {
 
             <br/>
             <div className='button_container'>
-            <CustomButton text="Download Cv" icon={<GetAppIcon/>}/>
+            {/* <CustomButton text="Download Cv" icon={<GetAppIcon/>} onClick={()=>saveFile}>
+            
+            </CustomButton> */}
+            {/* <button>
+            <a href="/resume/Ibrahim.pdf" download><strong>Download my Resume!</strong></a>
+            </button> */}
+
+            <Button className='custom_btn' >
+            <a href="/resume/Ibrahim.pdf" download  className='custom_anchor' >Download my Resume{< DownloadIcon/>}</a>
+             </Button>
             </div>
            
         </div>

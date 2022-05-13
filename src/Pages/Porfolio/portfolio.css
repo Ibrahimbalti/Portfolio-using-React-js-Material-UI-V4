@@ -52,7 +52,12 @@
     object-position: center center;
 }
 .projectDialog .projectDialog_description{
-    margin-top: 10px I !important;
+    margin-top: 10px  !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    color:grey;
+    font-size: 16px;
 }
 
 .projectDialog .projectDialog_actions{

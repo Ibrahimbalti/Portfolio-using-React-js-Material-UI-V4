@@ -15,7 +15,7 @@ const Resume = () => {
       <Grid container className='section pb_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
-          <h6 className='section_title_text'>About Me</h6>
+          <h6 className='section_title_text'>ABOUT ME</h6>
         </Grid>
 
         <Grid item xs={12}>
@@ -27,7 +27,7 @@ const Resume = () => {
       <Grid container className='section  pb_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
-          <h6 className='section_title_text'>Resume</h6>
+          <h6 className='section_title_text'>RESUME</h6>
         </Grid>
         <Grid item xs={12} >
           <Grid container className='resumeTimeline'>
@@ -66,7 +66,7 @@ const Resume = () => {
       </Grid>
 
       {/* Services */}
-      <Grid container className='section  pb_45'>
+      {/* <Grid container className='section  pb_45'>
         <Grid item className='section_title mb_30'>
           <span></span>
           <h6 className='section_title_text'>Services</h6>
@@ -85,10 +85,14 @@ const Resume = () => {
             ))}
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
 
       {/* Skill */}
       <Grid container className='section graybg pb_45 p_50' >
+      <Grid item className='section_title mb_30'>
+          <span></span>
+          <h6 className='section_title_text'>SKILL</h6>
+        </Grid>
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-between" >
             {resumeData.skill.map((skill,i) => (
@@ -115,7 +119,7 @@ const Resume = () => {
           <Grid container >
             <Grid item className='section_title mb_30'>
               <span></span>
-              <h6 className='section_title_text'>Contact Us</h6>
+              <h6 className='section_title_text'>CONTACT ME</h6>
             </Grid>
           </Grid>
           
@@ -143,7 +147,7 @@ const Resume = () => {
           <Grid container >
             <Grid item className='section_title mb_30'>
               <span></span>
-              <h6 className='section_title_text'>Contact Information</h6>
+              <h6 className='section_title_text'>CONTACT INFORMATION</h6>
             </Grid>
             <Grid item xs={12}>
               <Grid container>
